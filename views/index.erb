@@ -3,10 +3,20 @@
 <head>Lending Library</head>
 <body>
 <h3>Books I've Lent Out</h3>
-<form action="/" method="post">
-  <input type="text" placeholder="Book Title" name="book">
-  <input type="submit" value="Add">
-</form>
+<a href="/new">Add a Title</a>
+<% titles.each do |title| %>
+  <p><%= title %></p>
+  <% end %>
 </body>
 </html>
 
+
+<!--<form action="/" method="post">-->
+<!--<input type="text" placeholder="Book Title" name="book">-->
+<!--<input type="submit" value="Add a Title">-->
+<!--</form>-->
+<!--<div>-->
+<!--<br/><br/>-->
+<!--or...-->
+<!--<a href="/new">View Complete List</a>-->
+<!--</div>-->
